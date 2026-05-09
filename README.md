@@ -47,7 +47,7 @@ Make sure the following are installed on your system:
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/Shubham-711/image-forgery-detector.git
+git clone https://github.com/Deekshareddy10/Image_forgery_detection_using_DL.git
 cd image-forgery-detector
 ```
 

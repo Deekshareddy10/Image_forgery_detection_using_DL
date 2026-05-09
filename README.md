@@ -47,21 +47,21 @@ Make sure the following are installed on your system:
 ### 2. Clone the Repository
 
 ```bash
-git clone https://github.com/Deekshareddy10/Image_forgery_detection_using_DL.git
+git clone https://github.com/Shubham-711/image-forgery-detector.git
 cd image-forgery-detector
 ```
 
 ---
 
-### 3. Create and Activate Virtual Environment
-
-Create a virtual environment:
+### 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment:
+---
+
+### 4. Activate the Virtual Environment
 
 #### Windows
 
@@ -77,7 +77,7 @@ source venv/bin/activate
 
 ---
 
-### 4. Install Dependencies
+### 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -85,11 +85,9 @@ pip install -r requirements.txt
 
 ---
 
-### 5. Download Model Files
+### 6. Download the Model Files
 
 The trained model is tracked using Git LFS.
-
-Run the following command to download the model files:
 
 ```bash
 git lfs pull
@@ -97,11 +95,11 @@ git lfs pull
 
 ---
 
-### 6. Configure Secret Key
+### 7. Configure the Secret Key
 
 Open `app.py` and replace the placeholder `app.secret_key` with a securely generated secret key.
 
-Generate a key using:
+Generate one using:
 
 ```python
 import secrets
@@ -110,7 +108,7 @@ secrets.token_hex(24)
 
 ---
 
-### 7. Run the Application
+### 8. Run the Application
 
 ```bash
 flask run
@@ -142,9 +140,9 @@ image-forgery-detector/
 
 ## Notes
 
-- Ensure Git LFS is installed before pulling model files.
-- Large datasets and model weights are not included directly in the repository.
-- Recommended to use a virtual environment for dependency management.
+- Ensure Git LFS is installed before pulling model files
+- Large datasets and model weights are not included directly in the repository
+- Recommended to use a virtual environment for dependency management
 
 ---
 

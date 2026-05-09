@@ -1,38 +1,162 @@
-# Image_forgery_detection_using_DL
-Built as a part of deep learning course 
+# Image Forgery Detection Using Deep Learning
 
-## Local Setup & Installation 
-Follow these steps to run the project on your local machine.
+Built as part of a Deep Learning course project.
 
-1. Prerequisites:
+## Overview
 
-Python 3.10 or higher
-Git and Git LFS (for handling the large model file)
-2. Clone the Repository:
+This project focuses on detecting image forgery using deep learning techniques. The application allows users to upload images and predicts whether the image has been manipulated or forged.
 
-git clone (https://github.com/Shubham-711/image-forgery-detector.git)
+The model is integrated into a Flask web application for easy interaction and testing.
+
+---
+
+## Features
+
+- Deep learning based image forgery detection
+- Flask web application interface
+- Image upload and prediction support
+- Pretrained model integration
+- Local deployment support
+
+---
+
+## Tech Stack
+
+- Python
+- TensorFlow / Keras
+- Flask
+- HTML/CSS
+- Git LFS
+
+---
+
+## Local Setup and Installation
+
+Follow the steps below to run the project locally.
+
+### 1. Prerequisites
+
+Make sure the following are installed on your system:
+
+- Python 3.10 or higher
+- Git
+- Git LFS
+
+---
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/Deekshareddy10/Image_forgery_detection_using_DL.git
 cd image-forgery-detector
-3. Set up the Virtual Environment:
+```
 
-# Create a virtual environment
+---
+
+### 3. Create and Activate Virtual Environment
+
+Create a virtual environment:
+
+```bash
 python -m venv venv
+```
 
-# Activate it
-# Windows
+Activate the virtual environment:
+
+#### Windows
+
+```bash
 .\venv\Scripts\activate
-# macOS/Linux
+```
+
+#### macOS/Linux
+
+```bash
 source venv/bin/activate
-4. Install Dependencies:
+```
 
+---
+
+### 4. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-5. Download the Model File: The Keras model is tracked by Git LFS. Run the following command to download it.
+```
 
+---
+
+### 5. Download Model Files
+
+The trained model is tracked using Git LFS.
+
+Run the following command to download the model files:
+
+```bash
 git lfs pull
-6. Configure the Secret Key: Open app.py and replace the placeholder app.secret_key with a real, securely generated key. You can generate one in a Python terminal:
+```
 
+---
+
+### 6. Configure Secret Key
+
+Open `app.py` and replace the placeholder `app.secret_key` with a securely generated secret key.
+
+Generate a key using:
+
+```python
 import secrets
 secrets.token_hex(24)
-7. Run the Application:
+```
 
+---
+
+### 7. Run the Application
+
+```bash
 flask run
-The application will be available at http://127.0.0.1:5000.
+```
+
+The application will run at:
+
+```text
+http://127.0.0.1:5000
+```
+
+---
+
+## Project Structure
+
+```text
+image-forgery-detector/
+│
+├── app.py
+├── requirements.txt
+├── templates/
+├── static/
+├── models/
+├── uploads/
+└── README.md
+```
+
+---
+
+## Notes
+
+- Ensure Git LFS is installed before pulling model files.
+- Large datasets and model weights are not included directly in the repository.
+- Recommended to use a virtual environment for dependency management.
+
+---
+
+## Future Improvements
+
+- Improve model accuracy using advanced architectures
+- Add support for multiple forgery detection techniques
+- Deploy application using cloud platforms
+- Add user authentication and image history tracking
+
+---
+
+## License
+
+This project was developed for academic and educational purposes.
